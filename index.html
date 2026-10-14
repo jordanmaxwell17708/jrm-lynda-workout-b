@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#090909">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>JRM Fitness | Lynda Workout B Timer</title>
+<style>
+:root{--bg:#090909;--panel:#171717;--panel2:#202020;--gold:#e3b657;--gold2:#f4d18a;--white:#f8f7f2;--muted:#b0aba2;--line:#3a3326;--good:#80d8aa;--radius:17px}
+*{box-sizing:border-box}html{background:var(--bg)}body{margin:0;background:var(--bg);color:var(--white);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}button{font:inherit;touch-action:manipulation;cursor:pointer}button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}button:disabled{opacity:.38;cursor:not-allowed}.app{max-width:1500px;margin:auto;padding:15px 22px 20px}.top{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-bottom:14px;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:16px}.jrm{font-weight:950;font-size:34px;letter-spacing:-2px;line-height:.85}.jrm small{display:block;font-size:9px;letter-spacing:5px;font-weight:700;margin-top:8px;margin-left:2px}.brandbar{height:39px;width:2px;background:var(--gold)}.tag{letter-spacing:3px;font-size:12px;line-height:1.65;color:var(--gold2);font-weight:700}.who{text-align:right}.who b{font-size:17px;letter-spacing:2px}.who span{display:block;font-size:12px;color:var(--muted);margin-top:3px}.nav{display:flex;gap:8px;overflow-x:auto;padding:14px 0 16px;scrollbar-width:none}.nav::-webkit-scrollbar{display:none}.nav button{flex:1;min-width:138px;min-height:52px;border:1px solid #38332b;border-radius:12px;background:#181818;color:#c9c4bb;text-align:left;padding:8px 11px;white-space:nowrap}.nav button.active{background:#352a16;color:#fff;border-color:var(--gold)}.nav button .num{color:var(--gold);font-weight:850;margin-right:6px}.nav button .short{font-size:12px;font-weight:800;letter-spacing:.4px}.nav button .dur{display:block;font-size:11px;color:#b5afa3;margin:3px 0 0 23px}.layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:14px;min-height:560px}.card{border:1px solid #35312a;border-radius:var(--radius);background:var(--panel);min-width:0}.timer-card{padding:23px;display:flex;flex-direction:column}.eyebrow{color:var(--gold);font-size:13px;letter-spacing:2px;font-weight:850}.section-title{font-size:clamp(23px,2.4vw,34px);line-height:1.1;font-weight:900;letter-spacing:.1px;margin:9px 0 0}.section-sub{color:var(--muted);font-size:14px;margin-top:9px;line-height:1.35;min-height:20px}.phase-line{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:23px}.phase{font-size:15px;font-weight:850;color:var(--gold2);letter-spacing:1.3px}.round{font-size:13px;color:#ddd;background:#282828;border:1px solid #474033;border-radius:30px;padding:8px 12px;font-weight:750}.clock{text-align:center;font-variant-numeric:tabular-nums;letter-spacing:-5px;font-size:clamp(90px,10.5vw,170px);font-weight:900;line-height:1.03;margin:7px 0 8px}.clock.countup{color:#fff}.clock.rest{color:#b9c7cc}.clock.complete{color:var(--good)}.progress{height:9px;border-radius:30px;background:#343434;overflow:hidden}.progress span{display:block;width:0%;height:100%;background:linear-gradient(90deg,#a57a2d,var(--gold2));transition:width .12s linear}.progress-info{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:9px;font-variant-numeric:tabular-nums}.now{background:#242019;border:1px solid #5d4822;border-radius:13px;padding:15px 17px;margin-top:18px;min-height:106px}.now .label{color:var(--gold);font-size:11px;letter-spacing:1.8px;font-weight:850}.now .exercise{font-size:clamp(20px,2.2vw,30px);font-weight:850;margin:7px 0 4px;line-height:1.15}.now .dose{font-size:14px;color:#e4dbca;line-height:1.35}.controls{display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:10px;margin-top:17px}.btn{min-height:62px;border-radius:12px;border:1px solid #6c5b3b;background:#27231c;color:#f8f6ef;font-size:17px;font-weight:850}.btn.primary{background:var(--gold);border-color:var(--gold);color:#15120c;font-size:22px}.btn:active{transform:scale(.98)}.smallcontrols{display:flex;gap:9px;flex-wrap:wrap;margin-top:10px}.mini{border-radius:9px;min-height:40px;padding:7px 13px;border:1px solid #494136;background:#252525;color:#e5e0d8;font-weight:750;font-size:13px}.mini.active{color:var(--gold2);border-color:#9a7841}.help{color:#99948b;font-size:12px;line-height:1.45;margin-top:auto;padding-top:14px}.right{padding:19px;display:flex;flex-direction:column;min-height:0}.righthead{display:flex;justify-content:space-between;align-items:center;gap:8px;padding-bottom:11px;border-bottom:1px solid #3c372f}.righthead h2{font-size:20px;margin:0}.righthead span{font-size:12px;color:var(--gold2);font-weight:800}.exercise-list{display:flex;flex-direction:column;gap:8px;margin-top:12px;overflow:auto;max-height:410px;padding-right:3px}.exercise-item{border:1px solid #343434;border-radius:12px;background:#202020;display:flex;gap:12px;padding:11px 12px;align-items:flex-start}.exercise-item.current{background:#342b1a;border-color:#b38a42}.exercise-item.done{opacity:.53}.index{display:grid;place-items:center;flex-shrink:0;width:32px;height:32px;border-radius:50%;background:#0d0d0d;color:var(--gold);font-size:15px;font-weight:900}.exercise-item.current .index{background:var(--gold);color:#111}.ex-main{min-width:0}.ex-name{font-size:17px;font-weight:800;line-height:1.18}.ex-dose{font-size:13px;color:#c4beb4;line-height:1.35;margin-top:4px}.tip{background:#1d1c19;border-left:3px solid var(--gold);padding:12px 13px;color:#d9d1c1;font-size:13px;line-height:1.4;margin-top:14px;border-radius:0 8px 8px 0}.tip b{color:var(--gold2)}.next{margin-top:12px;color:#b8b3aa;font-size:13px}.next strong{color:#fff}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:12px;color:#8e897f;font-size:11px}.foot strong{color:var(--gold)}
+@media(max-width:800px){.app{padding:12px}.layout{grid-template-columns:1fr}.timer-card{padding:17px}.right{padding:15px}.exercise-list{max-height:none}.clock{font-size:clamp(82px,20vw,135px)}.section-title{font-size:26px}.nav button{min-width:145px;flex:0 0 auto}.who span{font-size:11px}.tag{font-size:10px}.jrm{font-size:28px}.brand{gap:10px}}
+@media (min-width:801px) and (max-height:850px){.app{padding-top:10px}.top{padding-bottom:9px}.nav{padding:9px 0 11px}.nav button{min-height:46px}.layout{min-height:calc(100dvh - 165px)}.timer-card{padding:18px 20px}.section-title{font-size:26px}.phase-line{margin-top:13px}.clock{font-size:clamp(80px,10vw,115px);margin:3px 0}.now{margin-top:12px;min-height:93px;padding:12px}.now .exercise{font-size:23px}.controls{margin-top:12px}.btn{min-height:55px}.right{padding:14px}.exercise-list{max-height:calc(100dvh - 325px)}.exercise-item{padding:9px}.ex-name{font-size:15px}.ex-dose{font-size:12px}.tip{margin-top:10px;padding:9px}.help{font-size:11px}}
+@media (max-width:600px){.tag{display:none}.brandbar{display:none}.who b{font-size:15px}.clock{letter-spacing:-3px}.btn{font-size:15px;min-height:55px}.btn.primary{font-size:19px}.smallcontrols{gap:6px}.mini{font-size:12px;padding:6px 9px}.section-sub{font-size:13px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="top"><div class="brand"><div class="jrm">JRM<small>FITNESS</small></div><div class="brandbar"></div><div class="tag">CONSTANT<br>PROGRESSION</div></div><div class="who"><b>LYNDA · WORKOUT B</b><span>Lower body + cardio + core · iPad timer</span></div></header>
+<nav id="nav" class="nav" aria-label="Workout sections"></nav>
+<main class="layout">
+<section class="card timer-card" aria-label="Workout timer">
+<div class="eyebrow" id="sectionNo">SECTION 01 / 06</div>
+<h1 class="section-title" id="sectionTitle">MOVEMENT PREP</h1>
+<div class="section-sub" id="sectionSub"></div>
+<div class="phase-line"><span class="phase" id="phase">READY</span><span class="round" id="round">Manual pace</span></div>
+<div class="clock countup" id="clock" aria-live="off">00:00</div>
+<div class="progress"><span id="progressBar"></span></div>
+<div class="progress-info"><span id="progressLeft">Elapsed</span><span id="progressRight">Target 10-12 min</span></div>
+<div class="now"><div class="label" id="nowLabel">CURRENT MOVEMENT</div><div class="exercise" id="nowExercise">Backward walking</div><div class="dose" id="nowDose">2 lengths</div></div>
+<div class="controls"><button id="backBtn" class="btn" type="button">◀ Previous</button><button id="startBtn" class="btn primary" type="button">▶ Start</button><button id="forwardBtn" class="btn" type="button">Next ▶</button></div>
+<div class="smallcontrols"><button id="resetBtn" class="mini" type="button">↻ Reset section</button><button id="soundBtn" class="mini active" type="button">♪ Sound ON</button><button id="testBtn" class="mini" type="button">♫ Test sound</button><button id="wakeBtn" class="mini" type="button">☀ Keep screen on</button></div>
+<div class="help" id="help">For movement prep, strength and mobility, the clock counts UP. Tap Next after each exercise. EMOM and circuits run automatically.</div>
+</section>
+<aside class="card right"><div class="righthead"><h2>EXERCISE PLAN</h2><span id="planBadge">2 lengths each</span></div><div class="exercise-list" id="exerciseList"></div><div class="tip" id="tip"></div><div class="next" id="nextPreview"></div></aside>
+</main><footer class="foot"><span><strong>JRM FITNESS</strong> · CONSTANT PROGRESSION</span><span>Sections change manually · Work/rest transitions are automatic · Designed for iPad landscape</span></footer>
+</div>
+<script>
+'use strict';
+const sections = [
+ {short:'PREP',title:'MOVEMENT PREP + SINGLE-LEG ACTIVATION',duration:'10-12 min',mode:'manual',target:660,
+  intro:'2 lengths each, then 2 rounds of activation drills.',badge:'2 lengths + 2 rounds',splitAt:5,rounds:2,
+  items:[
+   ['Backward walking','2 lengths'],['Toe walking','2 lengths'],['Heel walking','2 lengths'],['Lateral shuffle','2 lengths'],['March → knee drive → balance','2 lengths · 2-sec hold'],
+   ['Active arch holds','5 × 3 sec / foot'],['Banded terminal knee extension (TKE)','10 / leg · 2-sec hold'],['Knee-over-toe ankle rocks','6 / side'],['Single-leg balance + forward toe tap','5 / leg']],
+  tip:'<b>FOCUS:</b> Tripod foot → active knee extension → stable hips. Tap Next when ready.'},
+ {short:'STRENGTH',title:'ONE-LEG STRENGTH (UNILATERAL)',duration:'15 min',mode:'manual',target:900,rounds:3,
+  intro:'3 rounds · Rest 60-75 sec after each round.',badge:'3 strength rounds',
+  items:[['Low box step-up → knee drive','6 / leg · Stand tall before lifting opposite knee'],['Dumbbell Romanian deadlift','10 reps · 3-sec lowering · Hips back'],['Supported reverse lunge','6 / leg · Smooth descent · Comfortable depth']],
+  tip:'<b>COACH CUE:</b> Use the weaker leg to set step height and balance difficulty. Advance rounds manually.'},
+ {short:'EMOM',title:'MECHANICS EMOM',duration:'12 min',mode:'emom',rounds:3,interval:60,
+  intro:'Every minute on the minute · 4 stations × 3 rounds.',badge:'60 sec per station',
+  items:[['Banded lateral walks → stick','6 steps each direction'],['Supported Patrick step','5 / leg · 3-sec lowering · Same plate height'],['Seated quad extension + toes pulled back','30-sec hold · Light, secured load'],['Seated bent-knee calf raise','10-12 reps · 2-sec pause at top']],
+  tip:'<b>QUALITY FIRST:</b> Controlled knee extension, active shins and steady foot pressure. Use remaining time in each minute to rest.'},
+ {short:'CARDIO',title:'CARDIO + MOVEMENT CIRCUIT',duration:'15 min',mode:'interval',rounds:3,work:40,rest:20,
+  intro:'40 sec work / 20 sec transition × 3 rounds.',badge:'40 WORK / 20 CHANGE',
+  items:[['Backward sled drag','Continuous, deliberate steps'],['Lateral step-over','Smooth transfers · Quiet feet'],['Kettlebell deadlift','Light load · Repeat the hip hinge'],['Forward/backward line steps','Step over and back · Alternate lead foot'],['Fast backward walking','Upright torso · Short quick steps']],
+  tip:'<b>ROUND PACING:</b> Round 1 controlled · Round 2 quicker · Round 3 strongest sustainable effort.'},
+ {short:'CORE',title:'CORE + LOWER-LIMB FINISHER',duration:'10 min',mode:'interval',rounds:2,work:40,rest:20,
+  intro:'40 sec work / 20 sec transition × 2 rounds.',badge:'40 WORK / 20 CHANGE',
+  items:[['Dead bug + heel taps','Slow alternating sides · Ribs down'],['Hamstring walkouts','Bridge up · Short heel steps out and back'],['Banded stability march','Gentle lateral waist resistance · 2-sec balance holds'],['Lying leg circles','Switch direction halfway'],['Reverse crunch','Small controlled curl · No swinging']],
+  tip:'<b>BAND SETUP:</b> Secure at waist height. Keep pull gentle; switch resistance side for round 2.'},
+ {short:'MOBILITY',title:'MOBILITY + DOWN-REGULATION',duration:'4-6 min',mode:'manual',target:300,
+  intro:'Move at your own pace · Cool down and breathe.',badge:'4 gentle movements',
+  items:[['Standing calf stretch','30 sec each side'],['Supported hip-flexor stretch','30 sec each side'],['Gentle knee-over-toe ankle rocks','5 each side'],['Relaxed breathing','1-2 min']],
+  tip:'<b>FINISH:</b> Relaxed breathing, smooth range of motion and an easy transition out of the session.'}
+];
+const $ = id=>document.getElementById(id);
+let s=0,idx=0,round=1,stage='work',running=false,finished=false,remaining=0,elapsed=0,deadline=0,lastTick=0,lastBeepSecond=null,soundOn=true,audio=null,wakeLock=null;
+const timed = sec => sec.mode !== 'manual';
+function totalSeconds(sec){return sec.mode==='emom'?sec.rounds*sec.items.length*60:sec.rounds*sec.items.length*(sec.work+sec.rest);}
+function format(sec){sec=Math.max(0,Math.floor(sec));return String(Math.floor(sec/60)).padStart(2,'0')+':'+String(sec%60).padStart(2,'0');}
+function initAudio(){try{if(!audio){audio=new(window.AudioContext||window.webkitAudioContext)();}if(audio.state==='suspended')audio.resume();}catch(e){}}
+function beep(freq=760,seconds=.11,vol=.18){if(!soundOn)return;try{initAudio();if(!audio)return;const osc=audio.createOscillator(),gain=audio.createGain(),now=audio.currentTime;osc.type='sine';osc.frequency.value=freq;gain.gain.setValueAtTime(.001,now);gain.gain.exponentialRampToValueAtTime(vol,now+.012);gain.gain.exponentialRampToValueAtTime(.001,now+seconds);osc.connect(gain);gain.connect(audio.destination);osc.start(now);osc.stop(now+seconds+.02);}catch(e){}}
+function chime(){beep(900,.14);setTimeout(()=>beep(1200,.2),140);}
+function resetState(){const sec=sections[s];idx=0;round=1;stage='work';running=false;finished=false;remaining=timed(sec)?(sec.mode==='emom'?60:sec.work):0;elapsed=0;deadline=0;lastTick=0;lastBeepSecond=null;}
+function chooseSection(n){if(n<0||n>=sections.length)return;s=n;resetState();render();}
+function current(){return sections[s];}
+function nextStep(){const sec=current();if(finished)return;
+ if(sec.mode==='manual'){
+  if(sec.splitAt!==undefined){if(idx<sec.items.length-1)idx++;else if(round<sec.rounds){round++;idx=sec.splitAt;}else complete();}
+  else if(idx<sec.items.length-1)idx++;else if(sec.rounds&&round<sec.rounds){round++;idx=0;}else complete();
+ }else{const isLast=idx===sec.items.length-1&&round===sec.rounds;
+  if(isLast){complete();return;}
+  if(idx<sec.items.length-1)idx++;else{idx=0;round++;}
+  stage='work';remaining=sec.mode==='emom'?60:sec.work;lastBeepSecond=null;
+  if(running)deadline=Date.now()+remaining*1000;
+ }
+ render();}
+function prevStep(){const sec=current();if(finished){finished=false;}
+ if(sec.mode==='manual'){
+  if(sec.splitAt!==undefined){if(round>1&&idx===sec.splitAt){round--;idx=sec.items.length-1;}else idx=Math.max(0,idx-1);}
+  else if(idx>0)idx--;else if(round>1){round--;idx=sec.items.length-1;}
+ }else{
+  if(stage==='rest'){stage='work';}
+  else if(idx>0)idx--;else if(round>1){round--;idx=sec.items.length-1;}
+  remaining=sec.mode==='emom'?60:sec.work;lastBeepSecond=null;if(running)deadline=Date.now()+remaining*1000;
+ }
+ render();}
+function complete(){running=false;finished=true;stage='complete';remaining=0;chime();}
+function advanceTimed(){const sec=current();if(sec.mode==='interval'&&stage==='work'){
+ stage='rest';remaining=sec.rest;beep(520,.22);lastBeepSecond=null;return;
+ }
+ if(idx===sec.items.length-1&&round===sec.rounds){complete();return;}
+ if(idx<sec.items.length-1)idx++;else{idx=0;round++;}
+ stage='work';remaining=sec.mode==='emom'?60:sec.work;lastBeepSecond=null;chime();}
+function toggle(){if(finished){resetState();}initAudio();if(running){running=false;if(timed(current()))remaining=Math.max(0,(deadline-Date.now())/1000);else elapsed+=(Date.now()-lastTick)/1000;}
+ else{running=true;if(timed(current()))deadline=Date.now()+remaining*1000;else lastTick=Date.now();beep(680,.1);}
+ render();}
+function tick(){if(!running)return;const sec=current();const now=Date.now();if(timed(sec)){
+  let delta=(deadline-now)/1000;
+  let guard=0,advanced=false;
+  while(delta<=0&&running&&guard++<80){advanced=true;const overshoot=-delta;advanceTimed();if(!running)break;deadline=now+(remaining-overshoot)*1000;delta=(deadline-now)/1000;}
+  if(running){remaining=Math.max(0,delta);const secLeft=Math.ceil(remaining);if(secLeft<=3&&secLeft>=1&&secLeft!==lastBeepSecond){lastBeepSecond=secLeft;beep(670,.09);}}
+  if(advanced)render();
+ }else{elapsed+=(now-lastTick)/1000;lastTick=now;}
+ renderClock();if(!running)render();}
+function manualDisplayItems(sec){return sec.items;}
+function render(){const sec=current();$('nav').innerHTML=sections.map((x,i)=>`<button type="button" class="${i===s?'active':''}" data-section="${i}" aria-current="${i===s?'step':'false'}"><span class="num">${i+1}</span><span class="short">${x.short}</span><span class="dur">${x.duration}</span></button>`).join('');
+ $('sectionNo').textContent='SECTION '+String(s+1).padStart(2,'0')+' / 06';$('sectionTitle').textContent=sec.title;$('sectionSub').textContent=sec.intro;
+ $('planBadge').textContent=sec.badge;$('tip').innerHTML=sec.tip;
+ $('phase').textContent=finished?'SESSION COMPLETE':!timed(sec)?'SELF-PACED':stage==='rest'?'TRANSITION / REST':sec.mode==='emom'?'EVERY MINUTE ON THE MINUTE':'WORK INTERVAL';
+ $('round').textContent=sec.splitAt!==undefined&&idx<sec.splitAt?'2 lengths each':sec.rounds?'ROUND '+round+' / '+sec.rounds:sec.mode==='manual'?'Manual pace':'Round';
+ $('nowLabel').textContent=finished?'SECTION FINISHED':stage==='rest'?'COMING UP NEXT':'CURRENT MOVEMENT';
+ $('nowExercise').textContent=finished?'Well done!':stage==='rest'?(getNextName(sec)==='Section complete'?'Finish this section':getNextName(sec)):sec.items[idx][0];
+ $('nowDose').textContent=finished?'Choose the next section above.':stage==='rest'?(getNextName(sec)==='Section complete'?'Final 20-second transition.':'Get set for the next station.'):sec.items[idx][1];
+ $('startBtn').textContent=finished?'↻ Restart':running?'Ⅱ Pause':'▶ Start';
+ $('backBtn').textContent=timed(sec)?'◀ Previous':'◀ Previous';$('forwardBtn').textContent=timed(sec)?'Skip ▶':'Next ▶';
+ $('soundBtn').textContent=soundOn?'♪ Sound ON':'♪ Sound OFF';$('soundBtn').classList.toggle('active',soundOn);
+ $('exerciseList').innerHTML=sec.items.map((it,i)=>`<div class="exercise-item ${i===idx&&!finished?'current':''} ${i<idx?'done':''}"><span class="index">${i+1}</span><div class="ex-main"><div class="ex-name">${escapeHtml(it[0])}</div><div class="ex-dose">${escapeHtml(it[1])}</div></div></div>`).join('');
+ $('nextPreview').innerHTML=finished?'Next: select another section above.':`<strong>UP NEXT:</strong> ${escapeHtml(getNextName(sec))}`;
+ renderClock();}
+function getNextName(sec){if(idx<sec.items.length-1)return sec.items[idx+1][0];if(sec.rounds&&round<sec.rounds)return sec.items[sec.splitAt!==undefined?sec.splitAt:0][0];return 'Section complete';}
+function escapeHtml(s){return String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');}
+function renderClock(){const sec=current(),isTimed=timed(sec),clock=$('clock');clock.className='clock'+(!isTimed?' countup':'')+(stage==='rest'?' rest':'')+(finished?' complete':'');clock.textContent=finished?'DONE':isTimed?format(Math.ceil(remaining)):format(elapsed);
+ if(isTimed){const d=sec.mode==='emom'?60:stage==='rest'?sec.rest:sec.work;const percent=(1-remaining/d)*100;$('progressBar').style.width=(finished?100:Math.min(100,Math.max(0,percent)))+'%';
+  const finishedIntervals=(round-1)*sec.items.length+idx;const per=sec.mode==='emom'?60:sec.work+sec.rest;
+  const used=finishedIntervals*per+(stage==='rest'?sec.work:0)+(d-remaining);
+  $('progressLeft').textContent=stage==='rest'?'Transition time remaining':'Station time remaining';$('progressRight').textContent=finished?'Finished':'Total left ~'+format(Math.ceil(Math.max(0,totalSeconds(sec)-used)));
+ }else{$('progressBar').style.width=Math.min(100,elapsed/sec.target*100)+'%';$('progressLeft').textContent='Elapsed time';$('progressRight').textContent='Suggested '+sec.duration;}
+}
+async function requestWake(){if(!('wakeLock' in navigator)){$('wakeBtn').textContent='☀ Use Auto-Lock settings';return;}try{if(wakeLock){await wakeLock.release();wakeLock=null;$('wakeBtn').textContent='☀ Keep screen on';}else{wakeLock=await navigator.wakeLock.request('screen');$('wakeBtn').textContent='☀ Screen stays on';wakeLock.addEventListener('release',()=>{$('wakeBtn').textContent='☀ Keep screen on';});}}catch(e){$('wakeBtn').textContent='☀ Use Auto-Lock settings';}}
+$('nav').addEventListener('click',e=>{const b=e.target.closest('[data-section]');if(b)chooseSection(Number(b.dataset.section));});
+$('startBtn').addEventListener('click',toggle);$('backBtn').addEventListener('click',prevStep);$('forwardBtn').addEventListener('click',()=>{if(timed(current())&&stage==='rest'){advanceTimed();if(running)deadline=Date.now()+remaining*1000;render();}else nextStep();});
+$('resetBtn').addEventListener('click',()=>{resetState();render();});$('soundBtn').addEventListener('click',()=>{soundOn=!soundOn;if(soundOn){initAudio();beep();}render();});$('testBtn').addEventListener('click',()=>{initAudio();chime();});$('wakeBtn').addEventListener('click',requestWake);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden&&running&&!timed(current()))lastTick=Date.now();if(!document.hidden&&wakeLock===null&&$('wakeBtn').textContent.includes('stays on'))requestWake();});
+setInterval(tick,150);resetState();render();
+</script>
+</body></html>
